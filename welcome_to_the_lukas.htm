@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>welcome to the Lukas</title>
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/ice/ice1011.css"><meta name="Microsoft Theme" content="ice 1011, default">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button86.jpg', /*url*/'button88.jpg', /*url*/'button90.jpg', /*url*/'button91.jpg', /*url*/'button4D.jpg', /*url*/'button4E.jpg')">
+
+<p>welcome to the Lukas.com portal.</p>
+<p>&nbsp;</p>
+<p>what would you like to do today:</p>
+<p><a href="new_page_3.htm">
+<img border="0" id="img1" src="button89.jpg" height="26" width="128" alt="search the web" fp-style="fp-btn: Corporate 1; fp-font-size: 11" fp-title="search the web" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button86.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button89.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button88.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button86.jpg')"></a></p>
+<p><a href="checking_the_news.htm">
+<img border="0" id="img2" src="button92.jpg" height="26" width="128" alt="check the news" fp-style="fp-btn: Corporate 2" fp-title="check the news" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button90.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button92.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button91.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button90.jpg')"></a></p>
+<p><a href="index.htm">
+<img border="0" id="img3" src="button4C.jpg" height="26" width="128" alt="browse lukas.com" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button4D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button4C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button4E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button4D.jpg')" fp-style="fp-btn: Corporate 3" fp-title="browse lukas.com"></a></p>
+
+</body>
+
+</html>

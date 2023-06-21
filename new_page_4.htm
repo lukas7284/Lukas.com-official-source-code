@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 4</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/ice/ice1011.css"><meta name="Microsoft Theme" content="ice 1011, default">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button74.jpg', /*url*/'button75.jpg')">
+
+<p><font size="7">New Jarrett!</font></p>
+<div style="position: absolute; width: 100px; height: 20px; z-index: 1; left: 810px; top: 19px" id="layer1">
+	<a href="index.htm">
+	<img border="0" id="img1" src="button76.jpg" height="20" width="100" alt="Back to home" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button74.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button76.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button75.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button74.jpg')" fp-style="fp-btn: Glow Rectangle 3" fp-title="Back to home"></a></div>
+<p>&nbsp;</p>
+<p>at the end of spring break, I will go to a remodeled school. the building is 
+way bigger and this will cost 14 million dollars.</p>
+<p>the old Jarrett is 100 years old but there are a lot of nice features of the 
+old Jarrett. the new Jarrett will also be nice but in completely different 
+ways </p>
+<p>&nbsp;</p>
+<p><img border="0" src="new%20jarrett.jpg" width="640" height="480"></p>
+<p>new Jarrett construction.</p>
+
+</body>
+
+</html>
